@@ -6,29 +6,29 @@ maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
 terdiri dari tiga bagian utama, yaitu:
 
 1. Kelas Product
-Kelas ini berfungsi sebagai model data yang merepresentasikan satu produk. Di dalamnya terdapat atribut seperti id, nama, harga, stok, dan kategori.
-Kelas ini juga memiliki getter dan setter untuk setiap atribut agar data bisa diakses dan diubah dengan cara yang aman.
+   Kelas ini berfungsi sebagai model data yang merepresentasikan satu produk. Di dalamnya terdapat atribut seperti id, nama, harga, stok, dan kategori.
+   Kelas ini juga memiliki getter dan setter untuk setiap atribut agar data bisa diakses dan diubah dengan cara yang aman.
 
 2. Kelas Database
-Kelas ini bertanggung jawab untuk mengatur koneksi antara program dan database MySQL.
-Di dalamnya terdapat fungsi untuk menjalankan perintah SQL seperti:
-- getData() untuk mengambil data (SELECT)
-- updateData() untuk menambah, mengubah, dan menghapus data (INSERT, UPDATE, DELETE).
-Saat program dijalankan, kelas ini langsung mencoba membuat koneksi ke database menggunakan JDBC (Java Database Connectivity).
+   Kelas ini bertanggung jawab untuk mengatur koneksi antara program dan database MySQL.
+   Di dalamnya terdapat fungsi untuk menjalankan perintah SQL seperti:
+   - getData() untuk mengambil data (SELECT)
+   - updateData() untuk menambah, mengubah, dan menghapus data (INSERT, UPDATE, DELETE).
+   Saat program dijalankan, kelas ini langsung mencoba membuat koneksi ke database menggunakan JDBC (Java Database Connectivity).
 
 3. Kelas ProductMenu
-Kelas ini merupakan bagian utama program yang menampilkan tampilan antarmuka (GUI) menggunakan Java Swing.
-Di sini, pengguna dapat:
-- Melihat daftar produk yang sudah tersimpan di database.
-- Menambah produk baru dengan mengisi form dan menekan tombol Add.
-- Mengubah data produk dengan memilih baris di tabel dan menekan tombol Update.
-- Menghapus produk yang dipilih dengan tombol Delete.
-- Mengosongkan form input menggunakan tombol Cancel.
-
-Program juga menampilkan pesan atau peringatan kepada pengguna, misalnya:
-- Jika ada kolom input yang masih kosong.
-- Jika ID produk sudah ada di database (untuk menghindari duplikasi).
-- Jika data berhasil ditambah, diubah, atau dihapus.
+   Kelas ini merupakan bagian utama program yang menampilkan tampilan antarmuka (GUI) menggunakan Java Swing.
+   Di sini, pengguna dapat:
+   - Melihat daftar produk yang sudah tersimpan di database.
+   - Menambah produk baru dengan mengisi form dan menekan tombol Add.
+   - Mengubah data produk dengan memilih baris di tabel dan menekan tombol Update.
+   - Menghapus produk yang dipilih dengan tombol Delete.
+   - Mengosongkan form input menggunakan tombol Cancel.
+     
+   Program juga menampilkan pesan atau peringatan kepada pengguna, misalnya:
+   - Jika ada kolom input yang masih kosong.
+   - Jika ID produk sudah ada di database (untuk menghindari duplikasi).
+   - Jika data berhasil ditambah, diubah, atau dihapus.
 
 **Alur Program**
 
@@ -70,4 +70,37 @@ Program dimulai
 Pengguna akan mendapat umpan balik dialog informasi atau peringatan (misalnya: “Data berhasil ditambahkan!” atau “Semua kolom harus diisi!”).
 
 **Dokumentasi**
+
+coba add produk
+![add produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/add%20data%20di%20tabel.png?raw=true)
+
+data berhasil di tambahkan
+![add produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/data%20berhasil%20di%20tambahkan.png?raw=true)
+
+pada database data juga bertambah
+![add produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/nambah%20pada%20dbproduct.png?raw=true)
+
+coba update data
+![update produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/update%20data.png?raw=true)
+
+berhasil update
+![update produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/berhasil%20update%20data.png?raw=true)
+
+update pada table
+![update produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/update%20tabel.png?raw=true)
+
+update pada database
+![update produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/update%20pada%20dbproduct.png?raw=true)
+
+coba hapus data
+![delete produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/delete%20data.png?raw=true)
+
+data berhasil di hapus
+![delete produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/berhasil%20delete.png?raw=true)
+
+data terhapus di tabel
+![delete produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/data%20kehapus%20di%20tabel.png?raw=true)
+
+data terhapus dalam database
+![delete produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/delete%20pada%20dbproduct.png?raw=true)
 
