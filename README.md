@@ -99,6 +99,7 @@ data berhasil di hapus
 ![delete produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/berhasil%20delete.png?raw=true)
 
 data terhapus di tabel
+
 ![delete produk](https://github.com/Erviina/TP5DPBO2425C2/blob/main/dokumentasi/data%20kehapus%20di%20tabel.png?raw=true)
 
 data terhapus dalam database
